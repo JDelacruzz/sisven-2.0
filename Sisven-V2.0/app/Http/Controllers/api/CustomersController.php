@@ -82,7 +82,7 @@ class CustomersController extends Controller
                 'statusCode' => 400
             ], 400);
         }
-        
+
         $customer = Customers::find($id);
 
         $customer->document_number = $request->document_number;
